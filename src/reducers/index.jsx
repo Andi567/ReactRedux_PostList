@@ -1,0 +1,10 @@
+// separate file with each reducer
+
+import { combineReducers } from "redux";
+import postReducer from "./postReducer";
+import userReducer from "./userReducer";
+
+export default combineReducers({
+  post: postReducer,
+  user: userReducer
+});
